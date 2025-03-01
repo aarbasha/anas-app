@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+    background-color: #27e0ef;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@layer utilities {
+    .bg-color-blob {
+        background-color: rgba(0, 115, 255, 0.5); /* Customize the color */
+    }
+    .bg-color-blob2 {
+        background-color: rgba(0, 255, 255, 0.5); /* Customize the color */
+    }
+    .bg-color-secondary1 {
+        background-color: rgba(255, 174, 0, 0.799); /* Customize the color */
+    }
+    .bg-color-secondary2 {
+        background-color: rgba(0, 255, 255, 0.5);
+    }
+
+    /* Other utility definitions... */
+}
+
+.blob1 {
+    @apply w-[500px] h-[500px] bg-color-blob absolute   top-10 left-52 blur-xl opacity-20 overflow-hidden rounded-full;
+}
+
+.secondary1 {
+    @apply w-[500px] h-[500px] bg-color-secondary1 absolute bottom-10 right-52 blur-xl opacity-20 overflow-hidden rounded-full;
+}
+
+.blob2 {
+    @apply w-[500px] h-[500px] bg-indigo-400 absolute top-3 left-48   blur-xl opacity-20 overflow-hidden rounded-full;
+}
+
+.secondary2 {
+    @apply w-[500px] h-[500px] bg-color-secondary2 absolute bottom-96 right-48  blur-xl opacity-20 overflow-hidden rounded-full;
+}
+
+.zoom-out {
+    transform-origin: top center;
+    transform: scale(0.8);
+}
+.aseid {
+    @apply bg-gradient-to-br from-gray-800 to-gray-900  fixed inset-0 z-50 my-4 ml-4 h-[calc(100vh-32px)] w-72 rounded-xl transition-transform duration-300 xl:translate-x-0;
+}
+
+.nav-link {
+    @apply no-underline font-semibold text-white text-2xl hover:text-red-400 transition duration-200;
+}
+
+.my-btn {
+    @apply px-10 py-1  text-xl rounded-3xl  transition duration-200;
+}
+
+.link {
+    @apply text-[#2076ef] px-5 py-3 text-3xl mx-1 rounded-3xl hover:text-[#275d9f] transition duration-200;
+}
+
+.online {
+    animation: scaleX 0.5s linear infinite;
+}
+
+.border-anim {
+    animation: borderAnimation 3s infinite;
+}
+
+.shadow-glow {
+    box-shadow:
+        0 0 1px #3bef18,
+        0 0 1px #ef7612,
+        0 0 1px #ef1ae3,
+        0 0 1px #6f2fef,
+        0 0 1px #27e0ef;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #3bef18;
+    } /* اللون الذهبي */
+    25% {
+        border-color: #ef7612;
+    } /* اللون الذهبي */
+    50% {
+        border-color: #ef1ae3;
+    } /* اللون الأزرق */
+    75% {
+        border-color: #6f2fef;
+    } /* اللون الأزرق */
+    100% {
+        border-color: #27e0ef;
+    } /* العودة إلى اللون الذهبي */
+}
+
+@keyframes scaleX {
+    0% {
+        transform: scale(0.7);
+    }
+
+    25% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    75% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(0.7);
+    }
+}
+
+@layer utilities {
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+        height: 8px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #fb9700;
+        border-radius: 6px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+    }
+}
+
+.animate-to-left-x {
+    animation: scaleToXx 13s linear infinite;
+}
+
+@keyframes scaleToXx {
+    0% {
+        transform: translateY(0) scale(1.2);
+    }
+
+    25% {
+        transform: translateY(25%) scale(1.1);
+    }
+
+    50% {
+        transform: translateY(50%) scale(0.8);
+    }
+
+    75% {
+        transform: translateY(75%) scale(1.1);
+    }
+
+    100% {
+        transform: translateY(0) scale(1.2);
+    }
+}
+
+.animate-scale-x {
+    animation: scalexX 13s linear infinite;
+}
+
+@keyframes scalexX {
+    0% {
+        transform: translateY(0) scale(1.1);
+    }
+
+    50% {
+        transform: translateY(100%) scale(1);
+    }
+
+    100% {
+        transform: translateY(0) scale(1.1);
+    }
+}
+
+
+
