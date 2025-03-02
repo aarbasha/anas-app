@@ -16,7 +16,7 @@ const Hero = () => {
               variants={FadeLeft(0.5)}
               initial="hidden"
               whileInView="visible"
-              className="text-3xl  text-[#2076ef] font-extrabold font-arial"
+              className="text-4xl  text-[#2076ef] font-extrabold font-arial"
             >
               Anas <span className="text-orange-400">Arbasha</span>{" "}
               <hr className="text-[#2076ef] my-2" />
@@ -40,7 +40,7 @@ const Hero = () => {
               Damascus Universtaty of Science and Chimistry Appled
             </motion.h4>
 
-            <div className="sosial flex justify-center items-center gap-3 mt-3">
+            <div className="sosial flex justify-center items-center gap-2 mt-3">
               {Sociel.map((item) => {
                 const IconComponent = item.icon; // استدعاء الأيقونة من المصفوفة
                 return (
@@ -56,7 +56,7 @@ const Hero = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`text-xl border-2 p-1  rounded-full transition-colors duration-500
-                 hover:bg-blue-500/10 hover:text-white`}
+                 hover:bg-white/90 hover:text-white`}
                         style={{
                           color: item.color,
                           borderColor: item.color,

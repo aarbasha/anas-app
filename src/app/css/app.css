@@ -1,8 +1,9 @@
 .body {
-    background-color: #431bb3;
+    background: rgb(14,13,19);
+    background: linear-gradient(99deg, rgba(14,13,19,1) 0%, rgba(58,78,94,1) 100%);
     background-attachment: fixed;
     width: 100%;
-    height: 300vh;
+    height: auto;
     overflow: hidden;
     position: relative;
 }
@@ -21,7 +22,7 @@
 .body .Wave-1 {
     animation: animate 5s linear infinite;
     z-index: 1000;
-    opacity: 0.08;
+    opacity: 0.03;
     animation-delay: 5s;
     bottom: 0;
 }
@@ -37,7 +38,7 @@
 .body .Wave-2 {
     animation: animate2 15s linear infinite;
     z-index: 999;
-    opacity: 0.05;
+    opacity: 0.02;
     animation-delay: 2s;
     bottom: -10px;
 }

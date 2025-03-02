@@ -4,6 +4,16 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FadeLeft, FadePosation, FadeRight } from "@/animation/AnimationItems";
 const About = () => {
+  const URL_CV = "http://localhost:3001/cv/cv.pdf";
+  const DownloadCV = (url) => {
+    const file_name = url.split("/").pop();
+    const a = document.createElement("a");
+    a.href = url;
+    a.setAttribute("download", file_name);
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  };
   return (
     <div className="w-full h-full">
       <div className=" container mx-auto px-5">
@@ -16,7 +26,7 @@ const About = () => {
           />
 
           <motion.div
-            variants={FadePosation(0.5)}
+            variants={FadePosation(0.7)}
             initial="hidden"
             whileInView="visible"
           >
@@ -38,27 +48,44 @@ const About = () => {
           >
             <Image
               src="/images/web.png"
-              className="min-w-[300px] min-h-[300px] md:min-w-[400px] md:min-h-[400px] rounded-full border-none border-blue-500"
+              alt="image"
+              className="min-w-[350px] min-h-[350px] md:min-w-[450px] md:min-h-[450px] rounded-full border-none border-blue-500"
               width={400}
               height={400}
             />
           </motion.div>
 
           <div className=" px-10">
-            <p className=" text-white text-[15px] lg:text-[18px] leading-6">
-              My name is Anas, <br /> I am 28 years old. I am from Damascus,
-              Syria <br /> I have loved programming since childhood, and the
-              first code I wrote was in 2013, and I've continued ever since.{" "}
-              <br /> I studied at the University of Damascus, majoring in
-              Applied Chemistry. <br /> After that, I moved to the Russian
-              Federation. <br /> Then, I moved to Germany, where I am still
-              continuing my education. I will be doing vocational training as a
-              system administrator due to my high passion for this field.
-              <br />I have extensive experience in web development and mobile
-              applications. I also have experience using the Linux and macOS
-              operating systems, as well as intermediate knowledge in
-              information security and encryption.
-            </p>
+            <motion.p
+              variants={FadeRight(0.8)}
+              initial="hidden"
+              whileInView="visible"
+              className="text-white text-[11px] lg:text-[14px] leading-6"
+            >
+              Mein Name ist Anas, <br /> ich bin 28 Jahre alt. Ich komme aus
+              Damaskus, Syrien <br /> Ich liebe das Programmieren seit meiner
+              Kindheit, und der erste Code, den ich 2013 geschrieben habe,
+              begleitet mich seitdem. <br /> Ich habe an der Universität
+              Damaskus studiert, mit dem Hauptfach Angewandte Chemie. <br />{" "}
+              Danach bin ich in die Russische Föderation gezogen. <br /> Dann
+              bin ich nach Deutschland gezogen, wo ich meine Ausbildung
+              fortsetze. Ich werde eine Berufsausbildung als Systemadministrator
+              machen, da ich eine große Leidenschaft für dieses Feld habe.{" "}
+              <br /> Ich habe umfangreiche Erfahrung in der Webentwicklung und
+              in mobilen Anwendungen. Ich habe auch Erfahrung mit den
+              Betriebssystemen Linux und macOS sowie mittlere Kenntnisse in der
+              Informationssicherheit und Verschlüsselung.
+            </motion.p>
+
+            <motion.button
+              variants={FadePosation(0.2)}
+              initial="hidden"
+              whileInView="visible"
+              className="border-[#ef9920] text-xs border-2 text-[#11b7fe] font-bold rounded-full px-6 py-2 mt-5   hover:bg-[#ef9920] hover:text-white transition duration-200"
+              onClick={() => DownloadCV(URL_CV)}
+            >
+              Mein Lebenslauf (PDF)
+            </motion.button>
           </div>
         </div>
       </div>

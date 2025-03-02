@@ -4,7 +4,6 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: #27e0ef;
 }
 
 body {
@@ -54,7 +53,7 @@ body {
 }
 
 .nav-link {
-    @apply no-underline font-semibold text-white text-2xl hover:text-red-400 transition duration-200;
+    @apply no-underline font-semibold text-white text-[13px] hover:text-[#fb923c] transition duration-200;
 }
 
 .my-btn {
@@ -185,6 +184,3 @@ body {
         transform: translateY(0) scale(1.1);
     }
 }
-
-
-

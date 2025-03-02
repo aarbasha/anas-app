@@ -7,6 +7,7 @@ import {
   FaTelegram,
   FaWhatsapp,
 } from "react-icons/fa";
+import { FaX } from "react-icons/fa6";
 
 export const Sociel = [
   {
@@ -56,5 +57,13 @@ export const Sociel = [
     color: "#25D366",
     link: "https://wa.me/004917620792218",
     daley: 1.2,
+  },
+  {
+    id: 7,
+    name: "X",
+    icon: FaX,
+    color: "#000000",
+    link: "https://x.com/aarbasha",
+    daley: 1.3,
   },
 ];
