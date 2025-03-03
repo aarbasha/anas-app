@@ -1,9 +1,10 @@
 export const Links = [
-  { name: "Home", link: "/" },
-  { name: "About", link: "/about" },
-  { name: "Service", link: "/service" },
-  { name: "Works", link: "/works" },
-  { name: "Contect", link: "/contect" },
+  { name: "Home", link: "home" },
+  { name: "About", link: "about" },
+  { name: "Service", link: "service" },
+  { name: "Skills", link: "skills" },
+  { name: "Works", link: "works" },
+  { name: "Contect", link: "contect" },
 ];
 
 export const BottomLinks = [

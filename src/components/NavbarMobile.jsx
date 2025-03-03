@@ -1,9 +1,11 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Links, BottomLinks } from "@/data/Links";
 
-const NavbarMobile = ({ open }) => {
+const NavbarMobile = ({ open , setOpen }) => {
+
   return (
     <AnimatePresence mode="wait">
       {open && (
@@ -12,17 +14,18 @@ const NavbarMobile = ({ open }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.3 }}
         >
           <div className="flex flex-col justify-start  w-full h-full fixed top-10 z-20 bg-black/90 backdrop-brightness-200 text-white   items-center p-5 gap-5">
             {Links.map((link) => (
-              <Link
-                href={link.link}
+              <a
+                href={`#${link.link}`}
                 key={link.name}
-                className="text-[18px] nav-link"
+                className="nav-link"
+                onClick={() => setOpen(false)}
               >
                 {link.name}
-              </Link>
+              </a>
             ))}
 
             <hr className="w-full  bg-blue-400 border border-blue-500 h-[0.5px]" />

@@ -17,9 +17,9 @@ const Navbar = () => {
 
           <div className="item text-[16px] space-x-5 hidden md:flex ">
             {Links.map((link) => (
-              <Link href={link.link} key={link.name} className="nav-link">
+              <a href={`#${link.link}`} key={link.name} className="nav-link">
                 {link.name}
-              </Link>
+              </a>
             ))}
           </div>
 
@@ -41,7 +41,7 @@ const Navbar = () => {
       </div>
 
       <div className="">
-        <NavbarMobile open={open} />
+        <NavbarMobile open={open} setOpen={setOpen} />
       </div>
     </nav>
   );

@@ -1,5 +1,8 @@
 import "./css/globals.css";
 import "./css/app.css";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+import BackToTop from "@/components/BackToTop";
 
 export const metadata = {
   title: "Anas Arbasha",
@@ -15,9 +18,22 @@ export default function RootLayout({ children }) {
       <body className={`custom-scrollbar`}>
         <div className="body">
           {children}
+          <BackToTop />
           <div className="Wave-1 wave"></div>
           <div className="Wave-2 wave"></div>
           <div className="Wave-3 wave"></div>
+          <ToastContainer
+              position="bottom-right"
+              autoClose={1000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="colored"
+            />
         </div>
       </body>
     </html>

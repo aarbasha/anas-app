@@ -8,7 +8,7 @@ import { Sociel } from "../data/Sociel";
 import Link from "next/link";
 const Hero = () => {
   return (
-    <div className="pt-[40px]">
+    <section id="home" className="pt-[40px]">
       <div className=" container mx-auto">
         <div className=" flex lg:flex-row flex-col-reverse px-5 w-full h-[90vh] mx-auto justify-around items-center ">
           <div className="h1 text-center flex flex-col gap-2 ">
@@ -55,8 +55,8 @@ const Hero = () => {
                         href={item.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`text-xl border-2 p-1  rounded-full transition-colors duration-500
-                 hover:bg-white/90 hover:text-white`}
+                        className={`text-xl border-2 p-1  rounded-full transition duration-500
+                 hover:scale-150  hover:text-white`}
                         style={{
                           color: item.color,
                           borderColor: item.color,
@@ -80,14 +80,14 @@ const Hero = () => {
             <Image
               src={"/images/anas.jpg"}
               alt="logo"
-              className="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] rounded-full border-none border-blue-500"
+              className="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] rounded-full transition duration-500 hover:scale-110 hover:-rotate-12"
               width={400}
               height={400}
             />
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

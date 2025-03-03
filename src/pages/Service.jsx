@@ -21,8 +21,8 @@ const defaultOptions = {
 
 const Service = () => {
   return (
-    <div className="w-full h-full ">
-      <div className=" container mx-auto px-5 mt-20">
+    <section id="service" className="w-full h-full pt-10">
+      <div className=" container mx-auto px-5">
         <div className=" flex justify-center items-center text-center text-3xl text-[#ef9920] my-5">
           <motion.hr
             variants={FadeLeft(0.5)}
@@ -47,7 +47,7 @@ const Service = () => {
         </div>
 
         {/* flex pt-10 flex-wrap md:flex-row flex-col gap-3 md:gap-4 lg:gap-5 justify-center items-center */}
-        <div className="flex flex-wrap justify-center items-center  gap-5">
+        <div className="flex flex-wrap  w-full justify-center items-center  gap-5">
           {Services.map((item) => {
             const IconComponent = item.icon; // استدعاء الأيقونة من المصفوفة
             return (
@@ -59,7 +59,7 @@ const Service = () => {
                 className=""
               >
                 <Tilt options={defaultOptions}>
-                  <div className=" flex justify-center items-center   w-[370px] h-[400px] rounded-3xl  text-white bg-white/20  p-4 ">
+                  <div className=" flex justify-center items-center   w-[320px] h-[400px] rounded-3xl  text-white bg-white/20  p-4 ">
                     <div className=" flex flex-col justify-evenly items-center h-full p-1 text-center ">
                       <div className=" border-2 border-[#ef9920] rounded-full p-2 bg-black/50">
                         <IconComponent className="text-3xl text-[#2076ef] " />
@@ -82,7 +82,7 @@ const Service = () => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -15,7 +15,7 @@ const About = () => {
     a.remove();
   };
   return (
-    <div className="w-full h-full">
+    <section id="about" className="w-full h-full pt-10">
       <div className=" container mx-auto px-5">
         <div className=" flex justify-center items-center text-center text-3xl text-[#ef9920] my-5">
           <motion.hr
@@ -81,7 +81,7 @@ const About = () => {
               variants={FadePosation(0.2)}
               initial="hidden"
               whileInView="visible"
-              className="border-[#ef9920] text-xs border-2 text-[#11b7fe] font-bold rounded-full px-6 py-2 mt-5   hover:bg-[#ef9920] hover:text-white transition duration-200"
+              className="border-[#ef9920] text-xs border-2 text-[#11b7fe] font-bold rounded-full px-6 py-2 mt-5   hover:bg-[#ef9920] hover:text-white transition duration-200  hover:scale-90"
               onClick={() => DownloadCV(URL_CV)}
             >
               Mein Lebenslauf (PDF)
@@ -89,7 +89,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

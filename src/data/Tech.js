@@ -77,7 +77,7 @@ export const Tech = [
   },
   {
     id: 8,
-    name: "Tailwind CSS",
+    name: "Tailwind",
     icon: SiTailwindcss,
     color: "#06b6d4",
     daley: 0.8,

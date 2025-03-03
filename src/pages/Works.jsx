@@ -6,8 +6,8 @@ import { Tech } from "@/data/Tech";
 
 const Works = () => {
   return (
-    <div className="w-full min-h-screen">
-      <div className="container mx-auto px-5 pt-10">
+    <section id="works" className="w-full h-full pt-10">
+      <div className=" container mx-auto px-5">
         <h1 className="text-3xl text-[#ef9920] my-5">
           <div className=" flex justify-center items-center text-center text-3xl text-[#ef9920] my-5">
             <motion.hr
@@ -33,7 +33,7 @@ const Works = () => {
           </div>
         </h1>
       </div>
-    </div>
+    </section>
   );
 };
 

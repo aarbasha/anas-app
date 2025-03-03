@@ -4,6 +4,12 @@
 
 html {
     scroll-behavior: smooth;
+    background: rgb(14, 13, 19);
+    background: linear-gradient(99deg, rgba(14, 13, 19, 1) 0%, rgba(58, 78, 94, 1) 100%);
+    background-attachment: fixed;
+    width: 100%;
+    position: relative;
+    height: auto;
 }
 
 body {
@@ -168,19 +174,19 @@ body {
 }
 
 .animate-scale-x {
-    animation: scalexX 13s linear infinite;
+    animation: scalexX 3s linear infinite;
 }
 
 @keyframes scalexX {
     0% {
-        transform: translateY(0) scale(1.1);
+        transform: translateY(0) scale(1);
     }
 
     50% {
-        transform: translateY(100%) scale(1);
+        transform: translateY(10%) scale(1);
     }
 
     100% {
-        transform: translateY(0) scale(1.1);
+        transform: translateY(0) scale(1);
     }
 }
