@@ -40,7 +40,7 @@ const Hero = () => {
               Damascus Universtaty of Science and Chimistry Appled
             </motion.h4>
 
-            <div className="sosial flex justify-center items-center gap-2 mt-3">
+            <div className="sosial flex justify-center items-center gap-1 mt-3">
               {Sociel.map((item) => {
                 const IconComponent = item.icon; // استدعاء الأيقونة من المصفوفة
                 return (
@@ -55,7 +55,7 @@ const Hero = () => {
                         href={item.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`text-xl border-2 p-1  rounded-full transition duration-500
+                        className={`text-md border-2 p-1  rounded-full transition duration-500
                  hover:scale-150  hover:text-white`}
                         style={{
                           color: item.color,

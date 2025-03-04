@@ -55,7 +55,7 @@ export const Sociel = [
     name: "Whatsapp",
     icon: FaWhatsapp,
     color: "#25D366",
-    link: "https://wa.me/004917620792218",
+    link: "https://wa.me/+4917620792218",
     daley: 1.2,
   },
   {
