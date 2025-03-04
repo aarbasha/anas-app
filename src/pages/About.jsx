@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FadeLeft, FadePosation, FadeRight } from "@/animation/AnimationItems";
 const About = () => {
-  const URL_CV = "https://anas.vercel.app/cv/cv.pdf";
+  const URL_CV = "https://anas-app.vercel.app/cv/cv.pdf";
   const DownloadCV = (url) => {
     const file_name = url.split("/").pop();
     const a = document.createElement("a");
