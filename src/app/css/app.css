@@ -8,6 +8,12 @@
     position: relative;
 }
 
+.container {
+    z-index: 36;
+    height: screen;
+    width: 100%;
+    position: relative;
+}
 .body .wave {
     position: fixed;
     width: 100%;
@@ -21,7 +27,7 @@
 
 .body .Wave-1 {
     animation: animate 5s linear infinite;
-    z-index: 1000;
+    z-index: 35;
     opacity: 0.03;
     animation-delay: 5s;
     bottom: 0;
@@ -37,7 +43,7 @@
 
 .body .Wave-2 {
     animation: animate2 15s linear infinite;
-    z-index: 999;
+    z-index: 34;
     opacity: 0.02;
     animation-delay: 2s;
     bottom: -10px;
@@ -53,7 +59,7 @@
 
 .body .Wave-3 {
     animation: animate3 30s linear infinite;
-    z-index: 998;
+    z-index: 30;
     opacity: 0.01;
     animation-delay: -10s;
     bottom: -15px;
@@ -65,4 +71,16 @@
     100% {
         background-position-x: 0px;
     }
+}
+
+
+#nav-mobile{
+
+    z-index: 1000;
+
+}
+
+#navbar{
+
+    z-index: 1000;
 }

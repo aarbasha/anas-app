@@ -3,20 +3,22 @@ import Link from "next/link";
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Links, BottomLinks } from "@/data/Links";
-
-const NavbarMobile = ({ open , setOpen }) => {
-
+import "../app/css/app.css";
+const NavbarMobile = ({ open, setOpen }) => {
   return (
     <AnimatePresence mode="wait">
       {open && (
         <motion.div
-          className="block md:hidden  "
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}
+          className="block md:hidden   z-80 "
+          initial={{ opacity: 0.9, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0.9, x: 100 }}
+          transition={{ duration: 0}}
         >
-          <div className="flex flex-col justify-start  w-full h-full fixed top-10 z-20 bg-black/90 backdrop-brightness-200 text-white   items-center p-5 gap-5">
+          <div
+            className="flex flex-col justify-start  w-full h-full fixed top-10 z-80 bg-black/95 backdrop-brightness-200 text-white   items-center p-5 gap-5"
+            id="nav-mobile"
+          >
             {Links.map((link) => (
               <a
                 href={`#${link.link}`}

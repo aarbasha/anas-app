@@ -4,11 +4,12 @@ import React, { useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import NavbarMobile from "./NavbarMobile";
 import { Links, BottomLinks } from "@/data/Links";
+import '../app/css/app.css'
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <nav>
-      <div className=" bg-black/0 backdrop-blur-3xl  text-white fixed top-0 left-0 w-full z-20 ">
+      <div className=" bg-black/0 backdrop-blur-3xl  text-white fixed top-0 left-0 w-full z-20 " id="navbar">
         <div className="container  w-full h-[60px]  px-7 md:px-5 mx-auto flex items-center justify-between">
           <div className="logo">
             <span className="text-blue-500 font-bold">Anas</span>
