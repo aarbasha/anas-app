@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="">
+      <div className="bg-red-400">
         <NavbarMobile open={open} setOpen={setOpen} />
       </div>
     </nav>

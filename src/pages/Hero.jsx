@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import { FadeLeft, FadePosation, FadeRight } from "@/animation/AnimationItems";
 import { Sociel } from "../data/Sociel";
 import Link from "next/link";
+
+import '../app/css/app.css'
 const Hero = () => {
   return (
     <section id="home" className="pt-[40px]">
@@ -40,11 +42,11 @@ const Hero = () => {
               Damascus Universtaty of Science and Chimistry Appled
             </motion.h4>
 
-            <div className="sosial flex justify-center items-center gap-1 mt-3">
+            <div className=" flex justify-center items-center gap-1 mt-3">
               {Sociel.map((item) => {
                 const IconComponent = item.icon; // استدعاء الأيقونة من المصفوفة
                 return (
-                  <div key={item.id}>
+                  <div key={item.id} className="sosial">
                     <motion.div
                       variants={FadeRight(item.daley)}
                       initial="hidden"
