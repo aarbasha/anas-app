@@ -4,6 +4,9 @@ import emailjs from "emailjs-com";
 import Link from "next/link";
 import React from "react";
 import { FaMailBulk, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+
 import Flag from "react-world-flags";
 const Contect = () => {
   const [form, setForm] = React.useState({
@@ -35,7 +38,7 @@ const Contect = () => {
     <section id="contect" className="w-full h-full pt-10">
       <div className=" container mx-auto px-5">
         <div className="flex lg:flex-row flex-col-reverse justify-around items-center gap-5 transform scale-90 ">
-          <div className="form-email w-full   min-h-[450px] bg-black/30 rounded-3xl">
+          <div className="form-email w-full   min-h-[500px] bg-black/30 rounded-3xl">
             <form onSubmit={(e) => SendEmailGast(e)}>
               <div className="flex flex-col gap-3 p-5">
                 <div className="flex md:flex-row flex-col  justify-around items-center gap-2">
@@ -81,7 +84,7 @@ const Contect = () => {
                     setForm({ ...form, message: e.target.value })
                   }
                   placeholder="Message"
-                  rows={5}
+                  rows={7}
                   className="bg-black/30 rounded-3xl text-white  text-xs px-5 py-3  focus:outline-none "
                 />
 
@@ -99,7 +102,7 @@ const Contect = () => {
             </form>
           </div>
 
-          <div className="form-data w-full  h-[450px] bg-black/30 rounded-3xl">
+          <div className="form-data w-full  min-h-[500px] bg-black/30 rounded-3xl">
             <div className="flex justify-start  items-center mt-5 text-white text-xs">
               <label className="px-10">Name : Anas Arbasha</label>
             </div>
@@ -129,15 +132,25 @@ const Contect = () => {
             </div>
 
             <div className="flex justify-start  items-center mt-5 text-white text-xs">
-              <label className="px-10">
-                Email :{" "}
+              <label className="px-10 flex justify-center items-center gap-1">
+                <MdEmail className="text-orange-500 text-xl" /> :{" "}
                 <span className="text-[#00b9ff]">info@anasarbasha.net</span>{" "}
               </label>
             </div>
 
             <div className="flex justify-start  items-center mt-5 text-white text-xs">
-              <label className="px-10">
-                Email : <span className="text-[#00b9ff]">info@anas.sy</span>{" "}
+              <label className="px-10 flex justify-center items-center gap-1">
+                <MdEmail className="text-orange-500 text-xl" /> :{" "}
+                <span className="text-[#00b9ff]">info@anas.sy</span>{" "}
+              </label>
+            </div>
+
+            <div className="flex justify-start  items-center mt-5 text-white text-xs">
+              <label className="px-10 flex justify-center items-center gap-1">
+                <FaLocationDot className="text-red-500 text-xl" /> :{" "}
+                <span className="text-[#00b9ff]">
+                  Germany , Baden-Württemberg , Stuttgart
+                </span>
               </label>
             </div>
 
