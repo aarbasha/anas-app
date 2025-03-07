@@ -25,7 +25,7 @@ import { SiNextdotjs } from "react-icons/si";
 const Vertical = () => {
   return (
     <VerticalTimeline
-      lineColor="#ff9c00"
+      lineColor="#f97316"
       className="vertical-timeline-custom-line "
       animate
       animationDuration={2000}

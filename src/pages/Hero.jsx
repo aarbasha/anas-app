@@ -7,7 +7,7 @@ import { FadeLeft, FadePosation, FadeRight } from "@/animation/AnimationItems";
 import { Sociel } from "../data/Sociel";
 import Link from "next/link";
 
-import '../app/css/app.css'
+import "../app/css/app.css";
 const Hero = () => {
   return (
     <section id="home" className="pt-[40px]">
@@ -20,7 +20,7 @@ const Hero = () => {
               whileInView="visible"
               className="text-4xl  text-[#2076ef] font-extrabold font-arial"
             >
-              Anas <span className="text-orange-400">Arbasha</span>{" "}
+              Anas <span className="text-secondary">Arbasha</span>{" "}
               <hr className="text-[#2076ef] my-2" />
             </motion.h1>
 
@@ -42,7 +42,7 @@ const Hero = () => {
               Damascus Universtaty of Science and Chimistry Appled
             </motion.h4>
 
-            <div className=" flex justify-center items-center gap-1 mt-3">
+            <div className=" flex justify-center items-center gap-2 mt-3">
               {Sociel.map((item) => {
                 const IconComponent = item.icon; // استدعاء الأيقونة من المصفوفة
                 return (
@@ -51,7 +51,7 @@ const Hero = () => {
                       variants={FadeRight(item.daley)}
                       initial="hidden"
                       whileInView="visible"
-                      className="flex flex-col justify-center items-center"
+                      className="flex flex-col justify-center items-center "
                     >
                       <Link
                         href={item.link}
@@ -65,7 +65,7 @@ const Hero = () => {
                           boxShadow: `10 -40px -106px ${item.color}`, // ظل بنفس لون الأيقونة
                         }}
                       >
-                        <IconComponent className="text-xl" />
+                        <IconComponent className="text-lg" />
                       </Link>
                     </motion.div>
                   </div>

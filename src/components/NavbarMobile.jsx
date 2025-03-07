@@ -8,13 +8,13 @@ const NavbarMobile = ({ open, setOpen }) => {
   return (
     <AnimatePresence mode="wait">
       {open && (
-        <div className="block md:hidden   z-100 ">
+        <div className="block lg:hidden   z-100 ">
           <motion.div
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -100 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="flex flex-col justify-start  w-full h-full fixed top-10 z-80 bg-black/95 backdrop-brightness-200 text-white   items-center p-5 gap-5"
+            className="flex flex-col justify-start  w-full h-full fixed top-10 z-80 bg-[#324150]/85 backdrop-brightness-200 text-white backdrop-blur-lg   items-center p-5 gap-5"
             id="nav-mobile"
           >
             {Links.map((link) => (

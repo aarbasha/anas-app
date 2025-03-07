@@ -23,7 +23,7 @@ const Service = () => {
   return (
     <section id="service" className="w-full h-full pt-10">
       <div className=" container mx-auto px-5">
-        <div className=" flex justify-center items-center text-center text-3xl text-[#ef9920] my-5">
+        <div className=" flex justify-center items-center text-center text-3xl text-secondary my-5">
           <motion.hr
             variants={FadeLeft(0.5)}
             initial="hidden"
@@ -61,7 +61,7 @@ const Service = () => {
                 <Tilt options={defaultOptions}>
                   <div className=" flex justify-center items-center   w-[320px] h-[400px] rounded-3xl  text-white bg-white/20  p-4 ">
                     <div className=" flex flex-col justify-evenly items-center h-full p-1 text-center ">
-                      <div className=" border-2 border-[#ef9920] rounded-full p-2 bg-black/50">
+                      <div className=" border-2 border-[#f97316] rounded-full p-2 bg-black/50">
                         <IconComponent className="text-3xl text-[#2076ef] " />
                       </div>
 
@@ -69,7 +69,7 @@ const Service = () => {
                         <h2>{item.title}</h2>
                       </div>
 
-                      <hr className="w-[80%] border border-[#ef9920]" />
+                      <hr className="w-[80%] border border-[#f97316]" />
 
                       <div>
                         <h4 className="text-sm">{item.info}</h4>

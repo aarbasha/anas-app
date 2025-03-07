@@ -44,7 +44,7 @@ const BackToTop = () => {
               value={scrollPercentage}
               text={`${Math.round(scrollPercentage)}%`}
               styles={{
-                path: { stroke: `#fb923c` },
+                path: { stroke: `#f97316` },
                 text: { fill: "#fff", fontSize: "25px" },
                 trail: { stroke: "#2076ef" },
               }}

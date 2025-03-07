@@ -17,7 +17,7 @@ const About = () => {
   return (
     <section id="about" className="w-full h-full pt-10">
       <div className=" container mx-auto px-5">
-        <div className=" flex justify-center items-center text-center text-3xl text-[#ef9920] my-5">
+        <div className=" flex justify-center items-center text-center text-3xl text-secondary  my-5">
           <motion.hr
             variants={FadeLeft(0.5)}
             initial="hidden"

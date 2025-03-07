@@ -16,15 +16,15 @@ export default function Home() {
     setLodaing(true);
     setTimeout(() => {
       setLodaing(false);
-    }, 5000);
+    }, 2000);
   }, []);
   return lodaing ? (
-    <div className="loader w-full h-screen flex text-3xl bg-custom-gradient text-blue-500 justify-center items-center">
+    <div className="loader w-full h-screen flex text-3xl bg-custom-gradient  justify-center items-center">
       <Audio
-        height="180"
-        width="180"
+        height="200"
+        width="200"
         radius="9"
-        color="orange"
+        color="#f97316"
         ariaLabel="loading"
         wrapperStyle
         wrapperClass

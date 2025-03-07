@@ -38,8 +38,8 @@ const Contect = () => {
     <section id="contect" className="w-full h-full pt-10">
       <div className=" container mx-auto px-5">
         <div className="flex lg:flex-row flex-col-reverse justify-around items-center gap-5 transform scale-90 ">
-          <div className="form-email w-full   min-h-[500px] bg-black/30 rounded-3xl">
-            <form onSubmit={(e) => SendEmailGast(e)}>
+          <div className="form-email w-full flex  justify-center items-center    min-h-[525px] bg-black/30 rounded-3xl">
+            <form onSubmit={(e) => SendEmailGast(e)} className="w-full">
               <div className="flex flex-col gap-3 p-5">
                 <div className="flex md:flex-row flex-col  justify-around items-center gap-2">
                   <input
@@ -102,74 +102,76 @@ const Contect = () => {
             </form>
           </div>
 
-          <div className="form-data w-full  min-h-[500px] bg-black/30 rounded-3xl">
-            <div className="flex justify-start  items-center mt-5 text-white text-xs">
-              <label className="px-10">Name : Anas Arbasha</label>
-            </div>
+          <div className="form-data w-full     min-h-[525px] bg-black/30 rounded-3xl">
+            <div className="flex flex-col w-full">
+              <div className="flex justify-start  items-center mt-5 text-white text-xs">
+                <label className="px-10">Name : Anas Arbasha</label>
+              </div>
 
-            <div className="flex justify-start  items-center mt-5 text-white text-xs">
-              <label className="px-10 flex justify-center items-center">
-                Phone (1){" "}
-                <Flag code="de" width="30" height="30" className="mx-2" /> :
-                +49-1762-079-2218
-              </label>
-            </div>
+              <div className="flex justify-start  items-center mt-5 text-white text-xs">
+                <label className="px-10 flex justify-center items-center">
+                  Phone (1){" "}
+                  <Flag code="de" width="30" height="30" className="mx-2" /> :
+                  +49-1762-079-2218
+                </label>
+              </div>
 
-            <div className="flex justify-start  items-center mt-5 text-white text-xs">
-              <label className="px-10 flex justify-center items-center">
-                Phone (2){" "}
-                <Flag code="sy" width="30" height="30" className="mx-2" /> :
-                +963-967107707
-              </label>
-            </div>
+              <div className="flex justify-start  items-center mt-5 text-white text-xs">
+                <label className="px-10 flex justify-center items-center">
+                  Phone (2){" "}
+                  <Flag code="sy" width="30" height="30" className="mx-2" /> :
+                  +963-967107707
+                </label>
+              </div>
 
-            <div className="flex justify-start  items-center mt-5 text-white text-xs">
-              <label className="px-10 flex justify-center items-center">
-                Phone (3){" "}
-                <Flag code="sy" width="30" height="30" className="mx-2" /> :
-                +963-967107717
-              </label>
-            </div>
+              <div className="flex justify-start  items-center mt-5 text-white text-xs">
+                <label className="px-10 flex justify-center items-center">
+                  Phone (3){" "}
+                  <Flag code="sy" width="30" height="30" className="mx-2" /> :
+                  +963-967107717
+                </label>
+              </div>
 
-            <div className="flex justify-start  items-center mt-5 text-white text-xs">
-              <label className="px-10 flex justify-center items-center gap-1">
-                <MdEmail className="text-orange-500 text-xl" /> :{" "}
-                <span className="text-[#00b9ff]">info@anasarbasha.net</span>{" "}
-              </label>
-            </div>
+              <div className="flex justify-start  items-center mt-5 text-white text-xs">
+                <label className="px-10 flex justify-center items-center gap-1">
+                  <MdEmail className="text-orange-500 text-xl" /> :{" "}
+                  <span className="text-[#00b9ff]">info@anasarbasha.net</span>{" "}
+                </label>
+              </div>
 
-            <div className="flex justify-start  items-center mt-5 text-white text-xs">
-              <label className="px-10 flex justify-center items-center gap-1">
-                <MdEmail className="text-orange-500 text-xl" /> :{" "}
-                <span className="text-[#00b9ff]">info@anas.sy</span>{" "}
-              </label>
-            </div>
+              <div className="flex justify-start  items-center mt-5 text-white text-xs">
+                <label className="px-10 flex justify-center items-center gap-1">
+                  <MdEmail className="text-orange-500 text-xl" /> :{" "}
+                  <span className="text-[#00b9ff]">info@anas.sy</span>{" "}
+                </label>
+              </div>
 
-            <div className="flex justify-start  items-center mt-5 text-white text-xs">
-              <label className="px-10 flex justify-center items-center gap-1">
-                <FaLocationDot className="text-red-500 text-xl" /> :{" "}
-                <span className="text-[#00b9ff]">
-                  Germany , Baden-Württemberg , Stuttgart
-                </span>
-              </label>
-            </div>
+              <div className="flex justify-start  items-center mt-5 text-white text-xs">
+                <label className="px-10 flex justify-center items-center gap-1">
+                  <FaLocationDot className="text-red-500 text-xl" /> :{" "}
+                  <span className="text-[#00b9ff]">
+                    Germany , Baden-Württemberg , Stuttgart
+                  </span>
+                </label>
+              </div>
 
-            <div className="flex justify-center items-center pt-5 gap-10">
-              <Link href={"https://wa.me/+4917620792218"} target="_blank">
-                <FaWhatsapp className=" text-[#25D366] hover:text-[#23ff61] transition duration-200 text-4xl " />
-              </Link>
+              <div className="flex justify-center items-center pt-5 gap-10">
+                <Link href={"https://wa.me/+4917620792218"} target="_blank">
+                  <FaWhatsapp className=" text-[#25D366] hover:text-[#23ff61] transition duration-200 text-4xl " />
+                </Link>
 
-              <Link href={"https://t.me/anas3"} target="_blank">
-                <FaTelegram className=" text-[#2c83f5] hover:text-[#1b9cff] transition duration-200  text-4xl " />
-              </Link>
+                <Link href={"https://t.me/anas3"} target="_blank">
+                  <FaTelegram className=" text-[#2c83f5] hover:text-[#1b9cff] transition duration-200  text-4xl " />
+                </Link>
 
-              <a
-                href="mailto:info@anasarbasha.net"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaMailBulk className="text-[#ba7d1b] hover:text-[#ffb222] transition duration-200 text-4xl" />
-              </a>
+                <a
+                  href="mailto:info@anasarbasha.net"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaMailBulk className="text-[#f97316] hover:text-[#c86017] transition duration-200 text-4xl" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
