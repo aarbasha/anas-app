@@ -39,7 +39,7 @@ const Navbar = () => {
             className="flex lg:hidden font-bold text-2xl"
             onClick={() => setOpen(!open)}
           >
-            {open ? <IoMdClose /> : <IoMdMenu />}
+            {open ? null : <IoMdMenu />}
           </div>
         </div>
       </div>

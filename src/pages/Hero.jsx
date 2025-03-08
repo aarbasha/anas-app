@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section id="home" className="pt-[40px]">
       <div className=" container mx-auto">
-        <div className=" flex lg:flex-row flex-col-reverse px-5 w-full h-[90vh] mx-auto justify-around items-center ">
+        <div className="flex flex-col-reverse justify-center gap-10 items-center h-screen lg:flex-row md:gap-5 lg:justify-around  ">
           <div className="h1 text-center flex flex-col gap-2 ">
             <motion.h1
               variants={FadeLeft(0.5)}
@@ -42,11 +42,11 @@ const Hero = () => {
               Damascus Universtaty of Science and Chimistry Appled
             </motion.h4>
 
-            <div className=" flex justify-center items-center gap-2 mt-3">
+            <div className=" flex justify-center flex-wrap items-center gap-1 md:gap-3 lg:gap-5 mt-3 w-auto p-1   mx-auto">
               {Sociel.map((item) => {
                 const IconComponent = item.icon; // استدعاء الأيقونة من المصفوفة
                 return (
-                  <div key={item.id} className="sosial">
+                  <div key={item.id} className="sosial ">
                     <motion.div
                       variants={FadeRight(item.daley)}
                       initial="hidden"
@@ -82,7 +82,7 @@ const Hero = () => {
             <Image
               src={"/images/anas.jpg"}
               alt="logo"
-              className="w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] rounded-full transition duration-500 hover:scale-110 hover:-rotate-12"
+              className="w-[350px] h-[350px] md:w-[400px] md:h-[400px]   lg:w-[450px] lg:h-[450px] rounded-full transition duration-500 hover:scale-110 hover:-rotate-12"
               width={400}
               height={400}
             />

@@ -178,7 +178,7 @@ body {
 }
 
 .animate-scale-x {
-    animation: scalexX 3s linear infinite;
+    animation: scalexX 2s linear infinite;
 }
 
 @keyframes scalexX {
@@ -187,7 +187,7 @@ body {
     }
 
     50% {
-        transform: translateY(10%) scale(1);
+        transform: translateY(40%) scale(1);
     }
 
     100% {
